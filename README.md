@@ -5,21 +5,28 @@ https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code?p
 
 
 
+## Example 1
 ```
+dotnet new console --framework net6.0
+
 dotnet run
 
 dotnet publish --configuration Release
 
+```
+
+## Example 2
+```
 dotnet new sln
 
-dotnet new classlib -o DemoLibrary
-dotnet sln add DemoLibrary/DemoLibrary.csproj
+dotnet new classlib -o StringLibrary
+dotnet sln add StringLibrary/StringLibrary.csproj
 
-dotnet new console -o DemoConsoleApp
-dotnet sln add DemoConsoleApp/DemoConsoleApp.csproj
+dotnet new console -o ShowCase
+dotnet sln add ShowCase/ShowCase.csproj
 
+dotnet add ShowCase/ShowCase.csproj reference StringLibrary/StringLibrary.csproj
 
-dotnet add DemoConsoleApp/DemoConsoleApp.csproj reference DemoLibrary/DemoLibrary.csproj
-
+dotnet new mstest -o StringLibraryTest
 ```
 
