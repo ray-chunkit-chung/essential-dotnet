@@ -1,5 +1,11 @@
 # essential-dotnet
 
+
+https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&passive=false&cid=2030#dotnet
+
+<https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code?pivots=dotnet-7-0>
+
+
 ## Step 1 Install .net sdk
 
 ```bash
