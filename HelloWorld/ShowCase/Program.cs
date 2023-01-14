@@ -13,7 +13,18 @@ class Program
     Console.WriteLine($"Hello, World!3. {name}");
     Console.WriteLine("Hello, World!4");
 
-    // Example2: String starts with upper
 
+    // Example2: String starts with upper
+    while (true)
+    {
+      // Get input string
+      Console.WriteLine("Input string");
+      string? str = Console.ReadLine();
+      if (string.IsNullOrEmpty(str)) break;
+
+      // result is true if str StartsWithUpper  
+      var result = str.StartsWithUpper();
+      Console.WriteLine($"String begins with uppercase: {result}");
+    }
   }
 }
