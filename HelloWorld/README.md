@@ -1,7 +1,8 @@
 # Hello world
 
-Modify from
 <https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code?pivots=dotnet-7-0>
+
+## Program
 
 ```bash
 cd HelloWorld
@@ -17,9 +18,22 @@ dotnet add ShowCase/ShowCase.csproj reference StringLibrary/StringLibrary.csproj
 dotnet new "mstest" -lang "C#" -n "StringLibraryTest" -o "StringLibraryTest"
 dotnet sln add StringLibraryTest/StringLibraryTest.csproj
 dotnet add StringLibraryTest/StringLibraryTest.csproj reference StringLibrary/StringLibrary.csproj
+```
+
+## Compile & test
+
+Compile and test the Release version. The Release version incorporates compiler optimizations that can affect the behavior of an application
+
+```bash
+dotnet run --configuration Release --project ShowCase
+```
+
+## Publish
+
+Publish a console app so that other users can run it
+
+```bash
+dotnet publish --configuration Release
 
 dotnet test StringLibraryTest/StringLibraryTest.csproj
-
-dotnet run
-dotnet publish --configuration Release
 ```

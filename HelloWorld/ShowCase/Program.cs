@@ -1,8 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using StringLibrary;
 
-var name = Console.ReadLine();
+class Program
+{
+  static void Main(string[] args)
+  {
+    // Example 1: Hello World
+    // See https://aka.ms/new-console-template for more information
+    Console.WriteLine("Input name:");
+    var name = Console.ReadLine();
+    Console.WriteLine("Hello, World!");
+    Console.WriteLine("Hello, World!2");
+    Console.WriteLine($"Hello, World!3. {name}");
+    Console.WriteLine("Hello, World!4");
 
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World!2");
-Console.WriteLine($"Hello, World!3. {name}");
-Console.WriteLine("Hello, World!4");
+    // Example2: String starts with upper
+
+  }
+}
