@@ -1,11 +1,10 @@
 # essential-dotnet
 
-
-https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&passive=false&cid=2030#dotnet
+<https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&passive=false&cid=2030#dotnet>
 
 <https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code?pivots=dotnet-7-0>
 
-https://dotnet.microsoft.com/en-us/learn/maui/first-app-tutorial/device-setup
+<https://dotnet.microsoft.com/en-us/learn/maui/first-app-tutorial/device-setup>
 
 ## Step 1 Install .net sdk
 
@@ -19,10 +18,9 @@ sudo apt-get install -y dotnet-sdk-7.0
 # sudo apt-get install -y dotnet-sdk-3.1
 ```
 
-
 ## Demo
 
-```
+```md
 .
 ├── HelloWorld
 ├── DotNetMaui
