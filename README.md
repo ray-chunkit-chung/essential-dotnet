@@ -1,35 +1,24 @@
-# Dotnet getting started
+# essential-dotnet
 
-Modify from
-https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code?pivots=dotnet-6-0
+## Step 1 Install .net sdk
 
-
-
-## Example 1
-```
-dotnet new console --framework net6.0
-
-dotnet run
-
-dotnet publish --configuration Release
-
+```bash
+wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+sudo apt-get update
+sudo apt-get install -y dotnet-sdk-7.0
+# sudo apt-get install -y dotnet-sdk-6.0
+# sudo apt-get install -y dotnet-sdk-3.1
 ```
 
-## Example 2
-```
-dotnet new sln
 
-dotnet new classlib -o StringLibrary
-dotnet sln add StringLibrary/StringLibrary.csproj
+## Demo
 
-dotnet new console -o ShowCase
-dotnet sln add ShowCase/ShowCase.csproj
-dotnet add ShowCase/ShowCase.csproj reference StringLibrary/StringLibrary.csproj
-
-dotnet new mstest -o StringLibraryTest
-dotnet sln add StringLibraryTest/StringLibraryTest.csproj
-dotnet add StringLibraryTest/StringLibraryTest.csproj reference StringLibrary/StringLibrary.csproj
-
-dotnet test StringLibraryTest/StringLibraryTest.csproj
-```
-
+.
+├── HelloWorld
+├── ...
+├── docs                    # Documentation files (alternatively `doc`)
+│   ├── ...              # ...
+│   └── ...                 # etc.
+└── ...
