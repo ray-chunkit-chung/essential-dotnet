@@ -34,6 +34,18 @@ Publish a console app so that other users can run it
 
 ```bash
 dotnet publish --configuration Release
+```
 
+## Unit test
+
+```bash
 dotnet test StringLibraryTest/StringLibraryTest.csproj
+dotnet test StringLibraryTest/StringLibraryTest.csproj --configuration Release
+```
+
+## Add packages
+
+```bash
+cd ShowCase
+dotnet add package "Newtonsoft.Json" -v "13.0.2"
 ```

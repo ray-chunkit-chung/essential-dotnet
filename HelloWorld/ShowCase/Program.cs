@@ -1,4 +1,12 @@
 ﻿using StringLibrary;
+using Newtonsoft.Json;
+
+public class Account
+{
+  public string? Name { get; set; }
+  public string? Email { get; set; }
+  public DateTime? DOB { get; set; }
+}
 
 class Program
 {
@@ -14,7 +22,8 @@ class Program
     Console.WriteLine("Hello, World!4");
 
     // Example2: String starts with upper
-    while (true) {
+    while (true)
+    {
       // Get input string
       Console.WriteLine("Input string");
       string? str = Console.ReadLine();
@@ -24,5 +33,17 @@ class Program
       var result = str.StartsWithUpper();
       Console.WriteLine($"String begins with uppercase: {result}");
     }
+
+    // using Newtonsoft.Json;
+    Account account = new Account
+    {
+      Name = "John Doe",
+      Email = "john@nuget.org",
+      DOB = new DateTime(1980, 2, 20, 0, 0, 0, DateTimeKind.Utc),
+    };
+    string json = JsonConvert.SerializeObject(account, Formatting.Indented);
+    Console.WriteLine("Print example json");    
+    Console.WriteLine(json);
+
   }
 }
